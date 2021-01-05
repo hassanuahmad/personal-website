@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Bootstrap Import -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"></script>
+
+    <title>Home</title>
+  </head>
+  <body>
+
+    <!-- Header -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12 pt-2 pb-2">
+          <header>
+            <a class="nameHeader" href="/"><p>Hassan</p></a>
+            <nav>
+              <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+              </ul>
+            </nav>
+          </header>
+        </div>
+      </div>
+    </div>
+
+      <!-- Welcome Text -->
+    <div class="container">
+      <div class="row">
+        <div class="d-flex flex-column col-6 mt-2 justify-content-center">
+          <div class="welcomeText anim-typewriter">
+            <p>~$ >Hi,</p>
+            <p>~$ >I am Hassan Usaid Ahmad</p>
+            <p>~$ >Aspiring Software Developer</p>
+            <p>~$ >Owner of Forest Finery</p>
+          </div>
+        </div>
+
+        <!-- My Pic -->
+        <div class="d-flex flex-column col-6 mt-2 justify-content-center">
+          <img src="images/hassanFullnew.png" class="mx-auto d-block" alt="">
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footerCon d-flex mb-5 fixed-bottom justify-content-center">
+
+      <div class="row">
+        <div class="d-flex flex-column col-4 justify-content-center">
+            <a href="https://www.linkedin.com/in/hassanuahmad/" target="_blank"><img src="icons/linkedin/48g.png" class="me-5 mx-auto" alt=""></a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="d-flex flex-column col-4 justify-content-center">
+          <a href="https://github.com/hassanuahmad" target="_blank"><img src="icons/github/48g.png" class="mx-auto" alt=""></a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="d-flex flex-column col-4 justify-content-center">
+          <a href="resume/Resume.pdf" target="_blank"><img src="icons/resume/48g.png" class="ms-5 mx-auto" alt=""></a>
+        </div>
+      </div>
+
+    </footer>
+
+    <!-- Background -->
+    <div id="background"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+
+    <script>
+    VANTA.NET({
+      el: "#background",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x39603d,
+      backgroundColor: 0xdaded4,
+      points: 20.00,
+      maxDistance: 10.00,
+      spacing: 20.00,
+      showDots: false
+    })
+    </script>
+
+  </body>
+</html>
