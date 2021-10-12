@@ -60,7 +60,6 @@ html {
 }
 
 /* HERO SECTION STARTED */
-
 .heroSection {
     height: 100vh;
     display: flex;
@@ -161,13 +160,13 @@ html {
     0% {
         transform: rotate(0);
     }
+
     100% {
         transform: rotate(360deg);
     }
 }
 
 /* HERO SECTION ENDED */
-
 /* PROJECT SECTION STARTED */
 .projectSectionName {
     font-family: RoslindaleText;
@@ -218,7 +217,6 @@ html {
 }
 
 /* PROJECT SECTION ENDED */
-
 /* ABOUT ME SECTION STARTED */
 .aboutMeSectionName {
     font-family: RoslindaleText;
@@ -270,41 +268,54 @@ html {
     0% {
         transform: translate(1px, 1px) rotate(0deg);
     }
+
     10% {
         transform: translate(-1px, -2px) rotate(-1deg);
     }
+
     20% {
         transform: translate(-3px, 0px) rotate(1deg);
     }
+
     30% {
         transform: translate(3px, 2px) rotate(0deg);
     }
+
     40% {
         transform: translate(1px, -1px) rotate(1deg);
     }
+
     50% {
         transform: translate(-1px, 2px) rotate(-1deg);
     }
+
     60% {
         transform: translate(-3px, 1px) rotate(0deg);
     }
+
     70% {
         transform: translate(3px, 1px) rotate(-1deg);
     }
+
     80% {
         transform: translate(-1px, -1px) rotate(1deg);
     }
+
     90% {
         transform: translate(1px, 2px) rotate(0deg);
     }
+
     100% {
         transform: translate(1px, -2px) rotate(-1deg);
     }
 }
 
 /* ABOUT ME SECTION ENDED */
-
 /* SKILLS SECTION STARTED */
+.skillsSection {
+    padding-bottom: 9.375rem;
+}
+
 .skillsSectionName {
     font-family: RoslindaleText;
     font-weight: bold;
@@ -321,46 +332,31 @@ html {
     padding: 6.25rem 0rem 0rem 6.25rem;
 }
 
-.allSkillsCombined {
-    padding-bottom: 9.375rem;
-}
-
-.allSkills {
+.skill-container {
     display: flex;
-    justify-content: space-between;
-    /* padding: 3.125rem 18.75rem; */
-    padding: 3.125rem 7.813rem;
-    font-size: 1.125rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 7.813rem 1.5625rem 7.813rem;
 }
 
-.htmlSkill {
-    flex-grow: 4;
+.skill {
+    color: white;
+    padding: 3.125rem 1.5625rem;
+    width: 25%;
 }
 
-.cssSkill {
-    padding: 0rem 3.125rem;
-    flex-grow: 4;
-}
-
-.JsSkill {
-    padding-right: 3.125rem;
-    flex-grow: 4;
-}
-
-.reactSkill {
-    flex-grow: 4;
-}
-
-.skillLine {
-    margin-top: 0.625rem;
-}
-
-.allSkills p {
+.skill p {
     font-family: Graphik;
     font-weight: 300;
-    color: white;
 }
 
+.skill hr {
+    border: none;
+    border-top: solid white 1px;
+    margin-top: 0.625rem;
+    width: 100%;
+}
 /* SKILLS SECTION ENDED */
 
 /* FOOTER SECTION STARTED */
@@ -407,24 +403,26 @@ html {
     text-decoration: none;
     color: white;
 }
-/* FOOTER SECTION ENDED */
 
+/* FOOTER SECTION ENDED */
 /* Media Queries STARTED */
 @media screen and (max-width: 1366px) {
     .picAndText {
         padding: 6.25rem 18.75rem;
         flex-direction: column;
     }
+
     .picAndText p {
         padding: 3.125rem 0rem;
     }
 }
 
 @media screen and (max-width: 1024px) {
-    /* 
-    - Decrease font size by 1rem
-    - Reduce the left, right paddings by 100px of the actual section content (NOT THE HEADINGS)
-    */
+
+    /*
+        - Decrease font size by 1rem
+        - Reduce the left, right paddings by 100px of the actual section content (NOT THE HEADINGS)
+        */
     .projectNames {
         padding: 6.25rem 12.5rem;
     }
@@ -432,74 +430,94 @@ html {
     .projectSection p {
         font-size: 3rem;
     }
+
     .picAndText {
         padding: 6.25rem 12.5rem;
         flex-direction: column;
     }
+
     .picAndText p {
         padding: 3.125rem 0rem;
     }
 }
 
 @media screen and (max-width: 768px) {
-    /* 
-    - Decrease left and right padding for everything by 50px
-    - Decrease heading fonts by 1.5rem
-    */
+
+    /*
+        - Decrease left and right padding for everything by 50px
+        - Decrease heading fonts by 1.5rem
+        */
     .heroHeaderText {
         padding: 2.5rem 3.125rem;
     }
+
     .heroHeaderLine {
         margin: 0rem 3.125rem;
     }
+
     .heroName {
         font-size: 4.5rem;
     }
+
     .projectSectionName {
         font-size: 4.5rem;
         padding: 0rem 3.125rem;
     }
+
     .projectNames {
         padding: 6.25rem 9.375rem;
     }
+
     .projectSection p {
         font-size: 2.5rem;
     }
+
     .aboutMeSectionName {
         font-size: 4.5rem;
         padding: 0rem 3.125rem;
     }
+
     .picAndText {
         padding: 6.25rem 9.375rem;
     }
+
     .picAndText p {
         padding: 3.125rem 0rem;
         font-size: 1rem;
     }
+
     .skillsSectionName {
         font-size: 4.5rem;
         padding: 0rem 3.125rem;
     }
+
     .skillsSubheading {
         font-size: 1.875rem;
         padding: 3.125rem 0rem 0rem 3.125rem;
     }
-    .allSkillsCombined {
-        padding-bottom: 6.25rem;
-    }
-    .allSkills {
+
+    .skill-container {
         padding: 3.125rem 6.25rem;
         font-size: 1rem;
     }
+
+    .skill {
+        width: 50%;
+        padding: 1.5625;
+    }
+
     .footer {
         font-size: 1rem;
     }
+
     .emailFooter {
         padding: 0rem 0rem 1.563rem 3.125rem;
     }
+
     .footerLine {
         margin: 0rem 3.125rem;
     }
+
     .footerOptions {
         padding: 3.125rem 3.125rem 4.688rem 3.125rem;
     }
@@ -509,79 +527,92 @@ html {
     .heroHeaderText {
         padding: 2.5rem 1.563rem;
     }
+
     .heroHeaderLine {
         margin: 0rem 1.563rem;
     }
+
     .projectSectionName {
         font-size: 3.5rem;
         text-align: center;
     }
+
     .projectNames {
         padding: 6.25rem 1.563rem;
     }
+
     .projectSection p {
         font-size: 2rem;
     }
+
     .aboutMeSectionName {
         font-size: 3.5rem;
         text-align: center;
     }
+
     .picAndText {
         padding: 6.25rem 1.563rem;
     }
+
     .picAndText p {
         padding: 3.125rem 0rem;
         font-size: 1rem;
     }
+
     .skillsSectionName {
         font-size: 3.5rem;
         text-align: center;
     }
+
     .skillsSubheading {
         font-size: 1.25rem;
         padding: 3.125rem 0rem 0rem 0rem;
         text-align: center;
     }
-    .allSkills {
+
+    .skill-container {
         display: flex;
         flex-direction: column;
         padding: 3.125rem 6.25rem 1.875rem 6.25rem;
         font-size: 1rem;
+        width: 100%;
     }
-    .cssSkill {
-        padding: 1.875rem 0rem;
+
+    .skill {
+        padding: 1rem;
+        width: 100%;
     }
-    .JsSkill {
-        padding: 0;
-        padding-bottom: 1.875rem;
-    }
+
     .mobileFixPadding {
         padding: 0rem 6.25rem 3.125rem 6.25rem;
     }
+
     .footer {
         font-size: 1rem;
     }
+
     .emailFooter {
         padding: 0rem 1.563rem 1.563rem 1.563rem;
     }
+
     .footerLine {
         margin: 0rem 1.563rem;
     }
+
     .footerOptions {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
         padding: 3.125rem 1.563rem 4.688rem 1.563rem;
     }
+
     .links {
         padding-bottom: 3.125rem;
     }
 }
 
 /* Media Queries ENDED */
-
 /* TESTING */
-
 .noOpa {
     opacity: 0;
 }
