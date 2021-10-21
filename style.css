@@ -1,633 +1,629 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* font-weight: 300; */
 @font-face {
-    font-family: "Graphik";
-    src: url("./fonts/Graphik-Light.woff2") format("woff2"),
-        url("./fonts/Graphik-Light.woff") format("woff");
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Graphik";
+  src: url("./fonts/Graphik-Light.woff2") format("woff2"),
+    url("./fonts/Graphik-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Graphik";
-    src: url("./fonts/Graphik-Regular.woff2") format("woff2"),
-        url("./fonts/Graphik-Regular.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Graphik";
+  src: url("./fonts/Graphik-Regular.woff2") format("woff2"),
+    url("./fonts/Graphik-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* font-weight: 500; */
 @font-face {
-    font-family: "Graphik";
-    src: url("./fonts/Graphik-Medium.woff2") format("woff2"),
-        url("./fonts/Graphik-Medium.woff") format("woff");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Graphik";
+  src: url("./fonts/Graphik-Medium.woff2") format("woff2"),
+    url("./fonts/Graphik-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "RoslindaleText";
-    src: url("./fonts/RoslindaleText-Regular.woff2") format("woff2"),
-        url("./fonts/RoslindaleText-Regular.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "RoslindaleText";
+  src: url("./fonts/RoslindaleText-Regular.woff2") format("woff2"),
+    url("./fonts/RoslindaleText-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "RoslindaleText";
-    src: url("./fonts/RoslindaleText-Bold.woff2") format("woff2"),
-        url("./fonts/RoslindaleText-Bold.woff") format("woff");
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "RoslindaleText";
+  src: url("./fonts/RoslindaleText-Bold.woff2") format("woff2"),
+    url("./fonts/RoslindaleText-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 body {
-    background-color: #121212;
+  background-color: #121212;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 /* HERO SECTION STARTED */
 .heroSection {
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
 }
 
 .heroHeaderText {
-    display: flex;
-    justify-content: space-between;
-    padding: 2.5rem 6.25rem;
-    /* height: 6.25rem; */
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem 6.25rem;
+  /* height: 6.25rem; */
 }
 
 .heroText {
-    font-family: Graphik;
-    font-weight: 300;
-    font-size: 1.125rem;
-    color: white;
+  font-family: Graphik;
+  font-weight: 300;
+  font-size: 1.125rem;
+  color: white;
 }
 
 .heroHeaderLine {
-    margin: 0rem 6.25rem;
+  margin: 0rem 6.25rem;
 }
 
 .contactMeInfo {
-    font-family: Graphik;
-    font-weight: 300;
-    font-size: 1rem;
-    color: white;
-    line-height: 1.25rem;
-    text-align: right;
-    padding: 0rem 6.25rem;
-    opacity: 0;
+  font-family: Graphik;
+  font-weight: 300;
+  font-size: 1rem;
+  color: white;
+  line-height: 1.25rem;
+  text-align: right;
+  padding: 0rem 6.25rem;
+  opacity: 0;
+}
+
+.underline-on-hover {
+  color: white;
+  text-decoration: none;
+}
+
+.underline-on-hover:hover {
+  cursor: pointer;
+  color: white;
+  text-decoration: underline;
 }
 
 #contact-id {
-    cursor: pointer;
-}
-
-.openMail {
-    color: white;
-    text-decoration: none;
+  cursor: pointer;
 }
 
 .heroMainText {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
 }
 
 .heroName {
-    font-family: RoslindaleText;
-    font-weight: bold;
-    font-size: 6rem;
-    color: white;
-    text-align: center;
-}
-
-.circleScroll {
-    display: flex;
-    justify-content: center;
-    /* 3.125rem = 50px */
-    padding-bottom: 3.125rem;
-    /* align-items: center; */
+  font-family: RoslindaleText;
+  font-weight: bold;
+  font-size: 6rem;
+  color: white;
+  text-align: center;
 }
 
 .bigCircle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 6.25rem;
-    height: 6.25rem;
-    border-radius: 100%;
-    letter-spacing: 0.156rem;
-    /* 0.063rem = 1px */
-    border: 0.063rem solid white;
-    animation: spin 10s linear infinite;
-    cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6.25rem;
+  height: 6.25rem;
+  border-radius: 100%;
+  letter-spacing: 0.156rem;
+  /* 0.063rem = 1px */
+  border: 0.063rem solid white;
+  animation: spin 10s linear infinite;
+  cursor: pointer;
 }
 
-.bigForHover {
-    width: 6.5rem;
-    height: 6.5rem;
+.circleScroll {
+  display: inline-block;
+}
+
+.circleScroll:hover {
+  transform: scale(1.1);
 }
 
 .circle {
-    display: flex;
-    font-family: Graphik;
-    font-size: 0.75rem;
-    color: white;
-    /* justify-content: center; */
-    /* align-items: center; */
+  display: flex;
+  font-family: Graphik;
+  font-size: 0.75rem;
+  color: white;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
 @keyframes spin {
-    0% {
-        transform: rotate(0);
-    }
+  0% {
+    transform: rotate(0);
+  }
 
-    100% {
-        transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* HERO SECTION ENDED */
 /* PROJECT SECTION STARTED */
 .projectSectionName {
-    font-family: RoslindaleText;
-    font-weight: bold;
-    font-size: 6rem;
-    color: white;
-    padding: 0rem 6.25rem;
-    padding-top: 6.25rem;
+  font-family: RoslindaleText;
+  font-weight: bold;
+  font-size: 6rem;
+  color: white;
+  padding: 0rem 6.25rem;
+  padding-top: 6.25rem;
 }
 
 .projectNames {
-    padding: 6.25rem 18.75rem;
-    -webkit-text-stroke: 0.063rem white;
+  padding: 6.25rem 18.75rem;
+  -webkit-text-stroke: 0.063rem white;
 }
 
 .projectSection p {
-    font-family: RoslindaleText;
-    font-size: 4rem;
+  font-family: RoslindaleText;
+  font-size: 4rem;
 }
 
 .project1 {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .project2 {
-    padding: 1.563rem 0rem;
-    cursor: pointer;
+  padding: 1.563rem 0rem;
+  cursor: pointer;
 }
 
 .project3 {
-    padding-bottom: 1.563rem;
-    cursor: pointer;
+  padding-bottom: 1.563rem;
+  cursor: pointer;
 }
 
 .project4 {
-    padding-bottom: 1.563rem;
-    cursor: pointer;
+  padding-bottom: 1.563rem;
+  cursor: pointer;
 }
 
 .projectNames a {
-    text-decoration: none;
-    color: #121212;
-    -webkit-text-stroke: 0.063rem white;
+  text-decoration: none;
+  color: #121212;
+  -webkit-text-stroke: 0.063rem white;
 }
 
 .projectNames a:hover {
-    color: white;
+  color: white;
 }
 
 /* PROJECT SECTION ENDED */
 /* ABOUT ME SECTION STARTED */
 .aboutMeSectionName {
-    font-family: RoslindaleText;
-    font-weight: bold;
-    font-size: 6rem;
-    color: white;
-    padding: 0rem 6.25rem;
+  font-family: RoslindaleText;
+  font-weight: bold;
+  font-size: 6rem;
+  color: white;
+  padding: 0rem 6.25rem;
 }
 
 .picAndText {
-    padding: 6.25rem 18.75rem;
-    display: flex;
-    color: white;
+  padding: 6.25rem 18.75rem;
+  display: flex;
+  color: white;
 }
 
 .picAndText p {
-    font-family: Graphik;
-    font-weight: 300;
-    font-size: 1.125rem;
-    color: white;
-    padding: 3.125rem 0rem;
-    padding-left: 3.125rem;
-    line-height: 200%;
+  font-family: Graphik;
+  font-weight: 300;
+  font-size: 1.125rem;
+  color: white;
+  padding: 3.125rem 0rem;
+  padding-left: 3.125rem;
+  line-height: 200%;
 }
 
 .myPic {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .myPic img:hover {
-    animation: shake 0.5s;
-    animation-iteration-count: infinite;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
 }
 
 .myText {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .ffText {
-    color: white;
+  color: white;
 }
 
 @keyframes shake {
-    0% {
-        transform: translate(1px, 1px) rotate(0deg);
-    }
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
 
-    10% {
-        transform: translate(-1px, -2px) rotate(-1deg);
-    }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
 
-    20% {
-        transform: translate(-3px, 0px) rotate(1deg);
-    }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
 
-    30% {
-        transform: translate(3px, 2px) rotate(0deg);
-    }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
 
-    40% {
-        transform: translate(1px, -1px) rotate(1deg);
-    }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
 
-    50% {
-        transform: translate(-1px, 2px) rotate(-1deg);
-    }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
 
-    60% {
-        transform: translate(-3px, 1px) rotate(0deg);
-    }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
 
-    70% {
-        transform: translate(3px, 1px) rotate(-1deg);
-    }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
 
-    80% {
-        transform: translate(-1px, -1px) rotate(1deg);
-    }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
 
-    90% {
-        transform: translate(1px, 2px) rotate(0deg);
-    }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
 
-    100% {
-        transform: translate(1px, -2px) rotate(-1deg);
-    }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 
 /* ABOUT ME SECTION ENDED */
 /* SKILLS SECTION STARTED */
 .skillsSection {
-    padding-bottom: 9.375rem;
+  padding-bottom: 9.375rem;
 }
 
 .skillsSectionName {
-    font-family: RoslindaleText;
-    font-weight: bold;
-    font-size: 6rem;
-    color: white;
-    padding: 0rem 6.25rem;
+  font-family: RoslindaleText;
+  font-weight: bold;
+  font-size: 6rem;
+  color: white;
+  padding: 0rem 6.25rem;
 }
 
 .skillsSubheading {
-    font-family: RoslindaleText;
-    font-size: 1.875rem;
-    font-weight: normal;
-    color: white;
-    padding: 6.25rem 0rem 0rem 6.25rem;
+  font-family: RoslindaleText;
+  font-size: 1.875rem;
+  font-weight: normal;
+  color: white;
+  padding: 6.25rem 0rem 0rem 6.25rem;
 }
 
 .skill-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 0rem 7.813rem 1.5625rem 7.813rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 7.813rem 1.5625rem 7.813rem;
 }
 
 .skill {
-    color: white;
-    padding: 3.125rem 1.5625rem;
-    width: 25%;
+  color: white;
+  padding: 3.125rem 1.5625rem;
+  width: 25%;
 }
 
 .skill p {
-    font-family: Graphik;
-    font-weight: 300;
+  font-family: Graphik;
+  font-weight: 300;
 }
 
 .skill hr {
-    border: none;
-    border-top: solid white 1px;
-    margin-top: 0.625rem;
-    width: 100%;
+  border: none;
+  border-top: solid white 1px;
+  margin-top: 0.625rem;
+  width: 100%;
 }
-/* SKILLS SECTION ENDED */
 
+/* SKILLS SECTION ENDED */
 /* FOOTER SECTION STARTED */
 .footer {
-    font-size: 1.125rem;
+  font-size: 1.125rem;
 }
 
 .emailFooter {
-    font-family: Graphik;
-    font-weight: 300;
-    color: white;
-    padding: 0rem 0rem 1.563rem 6.25rem;
+  font-family: Graphik;
+  font-weight: 300;
+  color: white;
+  padding: 0rem 0rem 1.563rem 6.25rem;
 }
 
 .footerLine {
-    margin: 0rem 6.25rem;
+  margin: 0rem 6.25rem;
 }
 
 .footerOptions {
-    display: flex;
-    justify-content: space-between;
-    font-family: Graphik;
-    font-weight: 300;
-    color: white;
-    padding: 3.125rem 6.25rem 4.688rem 6.25rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: Graphik;
+  font-weight: 300;
+  color: white;
+  padding: 3.125rem 6.25rem 4.688rem 6.25rem;
 }
 
 .links {
-    display: flex;
+  display: flex;
 }
 
 .githubLink {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .linkedinLink {
-    text-decoration: none;
-    color: white;
-    padding: 0rem 3.125rem;
+  text-decoration: none;
+  color: white;
+  padding: 0rem 3.125rem;
 }
 
 .resumeLink {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 /* FOOTER SECTION ENDED */
 /* Media Queries STARTED */
 @media screen and (max-width: 1366px) {
-    .picAndText {
-        padding: 6.25rem 18.75rem;
-        flex-direction: column;
-    }
+  .picAndText {
+    padding: 6.25rem 18.75rem;
+    flex-direction: column;
+  }
 
-    .picAndText p {
-        padding: 3.125rem 0rem;
-    }
+  .picAndText p {
+    padding: 3.125rem 0rem;
+  }
 }
 
 @media screen and (max-width: 1024px) {
 
-    /*
+  /*
         - Decrease font size by 1rem
         - Reduce the left, right paddings by 100px of the actual section content (NOT THE HEADINGS)
         */
-    .projectNames {
-        padding: 6.25rem 12.5rem;
-    }
+  .projectNames {
+    padding: 6.25rem 12.5rem;
+  }
 
-    .projectSection p {
-        font-size: 3rem;
-    }
+  .projectSection p {
+    font-size: 3rem;
+  }
 
-    .picAndText {
-        padding: 6.25rem 12.5rem;
-        flex-direction: column;
-    }
+  .picAndText {
+    padding: 6.25rem 12.5rem;
+    flex-direction: column;
+  }
 
-    .picAndText p {
-        padding: 3.125rem 0rem;
-    }
+  .picAndText p {
+    padding: 3.125rem 0rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
 
-    /*
+  /*
         - Decrease left and right padding for everything by 50px
         - Decrease heading fonts by 1.5rem
         */
-    .heroHeaderText {
-        padding: 2.5rem 3.125rem;
-    }
+  .heroHeaderText {
+    padding: 2.5rem 3.125rem;
+  }
 
-    .heroHeaderLine {
-        margin: 0rem 3.125rem;
-    }
+  .heroHeaderLine {
+    margin: 0rem 3.125rem;
+  }
 
-    .heroName {
-        font-size: 4.5rem;
-    }
+  .heroName {
+    font-size: 4.5rem;
+  }
 
-    .projectSectionName {
-        font-size: 4.5rem;
-        padding: 0rem 3.125rem;
-    }
+  .projectSectionName {
+    font-size: 4.5rem;
+    padding: 0rem 3.125rem;
+  }
 
-    .projectNames {
-        padding: 6.25rem 9.375rem;
-    }
+  .projectNames {
+    padding: 6.25rem 9.375rem;
+  }
 
-    .projectSection p {
-        font-size: 2.5rem;
-    }
+  .projectSection p {
+    font-size: 2.5rem;
+  }
 
-    .aboutMeSectionName {
-        font-size: 4.5rem;
-        padding: 0rem 3.125rem;
-    }
+  .aboutMeSectionName {
+    font-size: 4.5rem;
+    padding: 0rem 3.125rem;
+  }
 
-    .picAndText {
-        padding: 6.25rem 9.375rem;
-    }
+  .picAndText {
+    padding: 6.25rem 9.375rem;
+  }
 
-    .picAndText p {
-        padding: 3.125rem 0rem;
-        font-size: 1rem;
-    }
+  .picAndText p {
+    padding: 3.125rem 0rem;
+    font-size: 1rem;
+  }
 
-    .skillsSectionName {
-        font-size: 4.5rem;
-        padding: 0rem 3.125rem;
-    }
+  .skillsSectionName {
+    font-size: 4.5rem;
+    padding: 0rem 3.125rem;
+  }
 
-    .skillsSubheading {
-        font-size: 1.875rem;
-        padding: 3.125rem 0rem 0rem 3.125rem;
-    }
+  .skillsSubheading {
+    font-size: 1.875rem;
+    padding: 3.125rem 0rem 0rem 3.125rem;
+  }
 
-    .skill-container {
-        padding: 3.125rem 6.25rem;
-        font-size: 1rem;
-    }
+  .skill-container {
+    padding: 3.125rem 6.25rem;
+    font-size: 1rem;
+  }
 
-    .skill {
-        width: 50%;
-        padding: 1.5625;
-    }
+  .skill {
+    width: 50%;
+    padding: 1.5625;
+  }
 
-    .footer {
-        font-size: 1rem;
-    }
+  .footer {
+    font-size: 1rem;
+  }
 
-    .emailFooter {
-        padding: 0rem 0rem 1.563rem 3.125rem;
-    }
+  .emailFooter {
+    padding: 0rem 0rem 1.563rem 3.125rem;
+  }
 
-    .footerLine {
-        margin: 0rem 3.125rem;
-    }
+  .footerLine {
+    margin: 0rem 3.125rem;
+  }
 
-    .footerOptions {
-        padding: 3.125rem 3.125rem 4.688rem 3.125rem;
-    }
+  .footerOptions {
+    padding: 3.125rem 3.125rem 4.688rem 3.125rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
-    .heroHeaderText {
-        padding: 2.5rem 1.563rem;
-    }
+  .heroHeaderText {
+    padding: 2.5rem 1.563rem;
+  }
 
-    .heroHeaderLine {
-        margin: 0rem 1.563rem;
-    }
+  .heroHeaderLine {
+    margin: 0rem 1.563rem;
+  }
 
-    .projectSectionName {
-        font-size: 3.5rem;
-        text-align: center;
-    }
+  .projectSectionName {
+    font-size: 3.5rem;
+    text-align: center;
+  }
 
-    .projectNames {
-        padding: 6.25rem 1.563rem;
-    }
+  .projectNames {
+    padding: 6.25rem 1.563rem;
+  }
 
-    .projectSection p {
-        font-size: 2rem;
-    }
+  .projectSection p {
+    font-size: 2rem;
+  }
 
-    .aboutMeSectionName {
-        font-size: 3.5rem;
-        text-align: center;
-    }
+  .aboutMeSectionName {
+    font-size: 3.5rem;
+    text-align: center;
+  }
 
-    .picAndText {
-        padding: 6.25rem 1.563rem;
-    }
+  .picAndText {
+    padding: 6.25rem 1.563rem;
+  }
 
-    .picAndText p {
-        padding: 3.125rem 0rem;
-        font-size: 1rem;
-    }
+  .picAndText p {
+    padding: 3.125rem 0rem;
+    font-size: 1rem;
+  }
 
-    .skillsSectionName {
-        font-size: 3.5rem;
-        text-align: center;
-    }
+  .skillsSectionName {
+    font-size: 3.5rem;
+    text-align: center;
+  }
 
-    .skillsSubheading {
-        font-size: 1.25rem;
-        padding: 3.125rem 0rem 0rem 0rem;
-        text-align: center;
-    }
+  .skillsSubheading {
+    font-size: 1.25rem;
+    padding: 3.125rem 0rem 0rem 0rem;
+    text-align: center;
+  }
 
-    .skill-container {
-        display: flex;
-        flex-direction: column;
-        padding: 3.125rem 6.25rem 1.875rem 6.25rem;
-        font-size: 1rem;
-        width: 100%;
-    }
+  .skill-container {
+    display: flex;
+    flex-direction: column;
+    padding: 3.125rem 6.25rem 1.875rem 6.25rem;
+    font-size: 1rem;
+    width: 100%;
+  }
 
-    .skill {
-        padding: 1rem;
-        width: 100%;
-    }
+  .skill {
+    padding: 1rem;
+    width: 100%;
+  }
 
-    .mobileFixPadding {
-        padding: 0rem 6.25rem 3.125rem 6.25rem;
-    }
+  .mobileFixPadding {
+    padding: 0rem 6.25rem 3.125rem 6.25rem;
+  }
 
-    .footer {
-        font-size: 1rem;
-    }
+  .footer {
+    font-size: 1rem;
+  }
 
-    .emailFooter {
-        padding: 0rem 1.563rem 1.563rem 1.563rem;
-    }
+  .emailFooter {
+    padding: 0rem 1.563rem 1.563rem 1.563rem;
+  }
 
-    .footerLine {
-        margin: 0rem 1.563rem;
-    }
+  .footerLine {
+    margin: 0rem 1.563rem;
+  }
 
-    .footerOptions {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        padding: 3.125rem 1.563rem 4.688rem 1.563rem;
-    }
+  .footerOptions {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 3.125rem 1.563rem 4.688rem 1.563rem;
+  }
 
-    .links {
-        padding-bottom: 3.125rem;
-    }
+  .links {
+    padding-bottom: 3.125rem;
+  }
 }
 
 /* Media Queries ENDED */
 /* TESTING */
 .noOpa {
-    opacity: 0;
+  opacity: 0;
 }
 
 .yesOpa {
-    opacity: 1;
+  opacity: 1;
 }
 
 .yesUnder {
-    text-decoration: none;
-    color: white;
-}
-
-.underlineMail {
-    cursor: pointer;
-    color: white;
-    text-decoration: underline;
+  text-decoration: none;
+  color: white;
 }
