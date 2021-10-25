@@ -52,11 +52,24 @@
 }
 
 body {
+  animation: fadeInAnimation ease 3s;
+  animation-fill-mode: forwards;
   background-color: #121212;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    background: black;
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 /* HERO SECTION STARTED */
@@ -392,7 +405,7 @@ html {
   justify-content: center;
 }
 
-.links > * {
+.links>* {
   padding: 0rem 1.5625rem;
 }
 
