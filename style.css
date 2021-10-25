@@ -72,6 +72,96 @@ html {
   }
 }
 
+/* CONTACT OVERLAY STARTED */
+#contact-overlay {
+  background-color: #121212;
+  color: white;
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+  font-family: Graphik;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+#contact-overlay > *{
+  margin: 1.5625rem;
+}
+
+.disabled {
+  display: none;
+}
+
+.enabled {
+  align-items: center;
+  animation: fadeInAnimation ease 0.5s;
+  animation-fill-mode: forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.outerOverlayExit {
+  position: relative;
+  width: 70px;
+  cursor: pointer;
+}
+
+.innerOverlayExit {
+  width: inherit;
+  text-align: center;
+}
+
+label {
+  line-height: 4em;
+  text-transform: uppercase;
+  color: white;
+  transition: all .3s ease-in;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.innerOverlayExit:before, .innerOverlayExit:after {
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: inherit;
+  color: white;
+  background: white;
+  left: 0;
+  transition: all .3s ease-in;
+}
+
+.innerOverlayExit:before {
+  top: 50%;
+  transform: rotate(45deg);
+}
+
+.innerOverlayExit:after {
+  bottom: 50%;
+  transform: rotate(-45deg);
+}
+
+.outerOverlayExit:hover label {
+  opacity: 1;
+}
+
+.outerOverlayExit:hover .innerOverlayExit:before,
+.outerOverlayExit:hover .innerOverlayExit:after {
+  transform: rotate(0);
+}
+
+.outerOverlayExit:hover .innerOverlayExit:before {
+  top: 0;
+}
+
+.outerOverlayExit:hover .innerOverlayExit:after {
+  bottom: 0;
+}
+
+/* CONTACT OVERLAY ENDED */
 /* HERO SECTION STARTED */
 .heroSection {
   height: 100vh;
@@ -99,17 +189,6 @@ html {
   margin: 0rem 6.25rem;
 }
 
-.contactMeInfo {
-  font-family: Graphik;
-  font-weight: 300;
-  font-size: 1rem;
-  color: white;
-  line-height: 1.25rem;
-  text-align: right;
-  padding: 0rem 6.25rem;
-  opacity: 0;
-}
-
 .underline-on-hover {
   color: white;
   text-decoration: none;
@@ -119,6 +198,10 @@ html {
   cursor: pointer;
   color: white;
   text-decoration: underline;
+}
+
+.underline-on-hover:active {
+  filter: brightness(80%);
 }
 
 #contact-id {
@@ -567,13 +650,6 @@ html {
 
 /* Media Queries ENDED */
 /* TESTING */
-.noOpa {
-  opacity: 0;
-}
-
-.yesOpa {
-  opacity: 1;
-}
 
 .yesUnder {
   text-decoration: none;

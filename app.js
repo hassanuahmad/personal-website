@@ -1,17 +1,19 @@
 new CircleType(document.getElementById("circle"));
 
-const contactMe = document.getElementById("contactMe");
-const heroLine = document.querySelector(".heroHeaderLine");
-const contactMeInfo = document.querySelector(".contactMeInfo");
+const contactOverlay = document.querySelector("#contact-overlay");
+const contactButton = document.querySelector("#contactMe");
+const contactExitButton = document.querySelector(".innerOverlayExit");
+const copyEmailButton = document.querySelector(".copyEmailButton");
+const email = "hassanusaidahmad@gmail.com";
 
-contactMe.addEventListener("mouseover", () => {
-  heroLine.classList.add("noOpa");
-  contactMeInfo.classList.add("yesOpa");
-});
+function toggleContactOverlay() {
+  contactOverlay.classList.toggle("disabled");
+  contactOverlay.classList.toggle("enabled");
+}
 
-contactMe.addEventListener("mouseout", () => {
-  setTimeout(() => {
-    heroLine.classList.remove("noOpa");
-    contactMeInfo.classList.remove("yesOpa");
-  }, 5000);
-});
+copyEmailButton.addEventListener('click', function() {
+  navigator.clipboard.writeText(email);
+}, false)
+
+contactButton.addEventListener('click', toggleContactOverlay, false);
+contactExitButton.addEventListener('click', toggleContactOverlay, false);
