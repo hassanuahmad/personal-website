@@ -388,22 +388,12 @@ html {
 
 .links {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.githubLink {
-  text-decoration: none;
-  color: white;
-}
-
-.linkedinLink {
-  text-decoration: none;
-  color: white;
-  padding: 0rem 3.125rem;
-}
-
-.resumeLink {
-  text-decoration: none;
-  color: white;
+.links > * {
+  padding: 0rem 1.5625rem;
 }
 
 /* FOOTER SECTION ENDED */
