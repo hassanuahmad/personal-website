@@ -1,4 +1,6 @@
-# Personal Website
-This is my personal website which I made using HTML, CSS and some JS
+# Personal-Website
+My personal website
 
-Enjoy!
+### Tech-Stack
+ - HTML/CSS
+ - JavaScript
