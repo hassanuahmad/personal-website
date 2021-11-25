@@ -1,4 +1,4 @@
-# Personal-Website
+# personal-website
 My personal website
 
 ### Tech-Stack
