@@ -1,6 +1,9 @@
-# personal-website
+# Personal Website
+
 My personal website
 
-### Tech-Stack
- - HTML/CSS
- - JavaScript
+## Tech Stack
+
+* HTML
+* CSS
+* JavaScript
